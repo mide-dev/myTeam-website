@@ -1,0 +1,77 @@
+:root {
+  --midnight-green: #014e56;
+  --light-coral: #f67e7e;
+  --white: #ffffff;
+  --rature-blue: #79c8c7;
+  --police-blue: #2c6269;
+  --deep-jungle-green: #004047;
+  --sacramento-state-green: #012f34;
+  --dark-green: #002529;
+}
+
+body {
+  margin: 0;
+  background-color: var(--midnight-green);
+  font-family: livvic, serif;
+  font-weight: 600;
+  color: var(--white);
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.hero-title {
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+}
+
+.hero-title-tint {
+  color: var(--light-coral);
+}
+
+/* Layout */
+
+.container {
+  max-width: 1110px;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid magenta;
+}
+
+.hamburger {
+  display: none;
+}
