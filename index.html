@@ -11,53 +11,90 @@
     <title>myteam website</title>
   </head>
   <body>
-    <div class="container">
+    
         <!-- header -->
       <header>
-        <nav>
-          <div class="nav-link-wrap">
-            <img class="logo" src="assets/logo.svg" alt="logo" />
-            <a class="nav-link">home</a>
-            <a class="nav-link">about</p>
-          </div>
-          <button class="btn-primary nav-btn">contact us</button>
-          <!-- mobile hamburger -->
-          <img class="hamburger" src="assets/icon-hamburger.svg" alt="logo" />
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="nav-link-wrap">
+                    <img class="logo" src="assets/logo.svg" alt="logo" />
+                    <a class="nav-link">home</a>
+                    <a class="nav-link">about</p>
+                </div>
+                <button class="btn-primary--light nav-btn">contact us</button>
+              
+              <!-- mobile hamburger -->
+              <div class="nav-mobile">
+                <img class="logo" src="assets/logo.svg" alt="logo" />
+                <img class="hamburger" src="assets/icon-hamburger.svg" alt="menu" />
+              </div>
+            </nav>
+        </div>
+        
       </header>
       
       <main role="main">
         <!-- hero -->
-        <section class="hero">
-            <h1 class="hero-title">Find the best <span class="hero-title-tint">talent</span></h1>
-            <p class="hero-body"></p>
+        <section class="hero container">
+            <h1 class="hero-title">Find the <br/> best <span class="hero-title-tint">talent</span>
+            </h1>
+            <div class="hero-body-wrap">
+                <div  class="border-top--skyblue"></div>
+                <p class="hero-body">
+                    Finding the right people and 
+                    building high performing teams can be hard. 
+                    Most companies aren’t tapping into the 
+                    abundance of global talent. We’re about to 
+                    change that. 
+                </p>
+            </div>
         </section>
 
         <!-- features -->
-        <section class="features">
-            <h2 class="features-title"></h2>
-            <!--  -->
-            <div class="features-content">
-                <svg class="features-icon"></svg>
-                <div class="features-body-wrap">
-                    <h3 class="features-body-title"></h3>
-                    <p class="features-body"></p>
+        <section class="features section--dark">
+            <div class="container">
+                <div class="features-title-wrap">
+                    <div  class="border-top--red"></div>
+                    <h2 class="features-title">
+                        Build & manage distributed teams like no one else.
+                    </h2>
                 </div>
-            </div>
-            <!--  -->
-            <div class="features-content">
-                <svg class="features-icon"></svg>
-                <div class="features-body-wrap">
-                    <h3 class="features-body-title"></h3>
-                    <p class="features-body"></p>
+                
+                <!--  -->
+                <div class="features-content">
+                    <img src = "assets/icon-person.svg" class="features-icon" />
+                    <div class="features-body-wrap">
+                        <h3 class="features-body-title">Experienced Individuals</h3>
+                        <p class="features-body">
+                            Our network is made up of highly 
+                            experienced professionals who are passionate 
+                            about what they do.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <!--  -->
-            <div class="features-content">
-                <svg class="features-icon"></svg>
-                <div class="features-body-wrap">
-                    <h3 class="features-body-title"></h3>
-                    <p class="features-body"></p>
+                <!--  -->
+                <div class="features-content">
+                    <img src = "assets/icon-chart.svg" class="features-icon" />
+                    <div class="features-body-wrap">
+                        <h3 class="features-body-title">Easy to Implement</h3>
+                        <p class="features-body">
+                            Our processes have been refined 
+                            over years of implementation 
+                            meaning our teams always deliver.
+                        </p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="features-content">
+                    <img src = "assets/icon-cog.svg" class="features-icon" />
+                    <div class="features-body-wrap">
+                        <h3 class="features-body-title">Enhanced Productivity</h3>
+                        <p class="features-body">
+                            Our customized platform with 
+                            in-built analytics helps you 
+                            manage your distributed teams.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -99,7 +136,7 @@
             <button class="btn-primary cta-btn"></button>
         </section>
       </main>
-    </div>
+    
 
     <!-- footer -->
     <footer>
