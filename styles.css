@@ -151,6 +151,7 @@ a {
 
 /* tablet screen*/
 @media (min-width: 601px) {
+  /* Layout */
   .nav-mobile {
     display: none;
   }
@@ -178,6 +179,7 @@ a {
 
 /* PC screen */
 @media (min-width: 1025px) {
+  /* Layout */
   .logo {
     width: 160px;
   }
@@ -192,7 +194,7 @@ a {
   ======= */
 
 /* Mobile and low res tablet */
-
+/* Typography */
 .hero-title {
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -214,6 +216,7 @@ a {
   max-width: 405px;
 }
 
+/* Layout */
 .hero {
   display: flex;
   flex-direction: column;
@@ -221,11 +224,19 @@ a {
   background-image: url("assets/bg-pattern-home-2.svg");
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: 340px 95px;
+  background-size: contain;
+}
+
+@media (min-width: 380px) {
+  /* Layout */
+  .hero {
+    background-size: 340px 95px;
+  }
 }
 
 /* tablet screen*/
 @media (min-width: 601px) {
+  /* Typography */
   .hero-title,
   .hero-body {
     text-align: center;
@@ -238,6 +249,7 @@ a {
     line-height: 3.5rem;
   }
 
+  /* Layout */
   .hero-body {
     padding-bottom: 16rem;
   }
@@ -245,12 +257,7 @@ a {
 
 /* pc screen*/
 @media (min-width: 1025px) {
-  body {
-    background-image: url("assets/bg-pattern-home-left.svg");
-    background-repeat: no-repeat;
-    background-position: 0px 20%;
-  }
-
+  /* Typography */
   .hero-title,
   .hero-body {
     text-align: left;
@@ -259,18 +266,25 @@ a {
     margin-bottom: 0;
   }
 
+  .hero-title {
+    font-size: 6rem;
+    line-height: 6rem;
+    width: 55%;
+  }
+
+  /* Layout */
+  body {
+    background-image: url("assets/bg-pattern-home-left.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 20%;
+  }
+
   .hero {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
     padding-bottom: 14rem;
     background-position: bottom right;
-  }
-
-  .hero-title {
-    font-size: 6rem;
-    line-height: 6rem;
-    width: 55%;
   }
 
   .hero-body-wrap {
@@ -292,11 +306,45 @@ a {
   ======= */
 
 /* Mobile and low res tablet */
+
+/* Typography */
+.features-title {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.features-body-title {
+  color: var(--light-coral);
+  font-size: 1.125rem;
+  padding-bottom: 0.5rem;
+}
+
+.features-body-title,
+.features-body {
+  text-align: center;
+}
+
+/* Layout */
 .features {
   padding-top: 4rem;
   background-image: url("assets/bg-pattern-home-right.svg");
   background-repeat: no-repeat;
   background-position: 100% 5%;
+}
+
+.features-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.features-content:last-child {
+  padding-bottom: 4rem;
+}
+
+.features-icon {
+  width: 72px;
 }
 
 .features-title-wrap {
@@ -305,15 +353,70 @@ a {
   padding-bottom: 3.5rem;
 }
 
-.features-title {
-  font-size: 2rem;
-  line-height: 2rem;
-}
-
 .border-top--red {
   border-top: 4px solid #f67e7e;
   position: relative;
   top: -33px;
   left: 0;
   width: 50px;
+}
+
+/* Tablet screens */
+@media (min-width: 601px) {
+  .features {
+    padding: 6.25rem 0;
+  }
+
+  .features-title-wrap {
+    width: 100%;
+  }
+
+  .features-content {
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 20px;
+  }
+
+  .features-content:last-child {
+    padding-bottom: 0;
+  }
+
+  .container--small {
+    width: 60%;
+  }
+
+  .features-body-title,
+  .features-body {
+    text-align: left;
+  }
+
+  .features-body-title {
+    margin-bottom: 1rem;
+  }
+}
+
+/* PC screens */
+@media (min-width: 1025px) {
+  .features-flex-container {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .container--small {
+    width: 100%;
+  }
+
+  .features-title {
+    font-size: 3rem;
+    line-height: 3rem;
+    max-width: 445px;
+  }
+
+  .features-wrap {
+    padding-top: 2.5rem;
+  }
+
+  .features {
+    background-position: 100% 90%;
+  }
 }
